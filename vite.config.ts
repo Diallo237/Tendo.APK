@@ -7,6 +7,7 @@ const apiProxyTarget = process.env.VITE_API_PROXY_TARGET || 'http://localhost:80
 
 // https://vite.dev/config/
 export default defineConfig({
+  root: path.resolve(__dirname),
 
   server: {
     port: 5173,  // Vite écoute sur ce port en dev (npm run dev)
