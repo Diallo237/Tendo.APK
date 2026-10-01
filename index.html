@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Icône de repli, en attendant le logo téléversé dans l'administration
+         (PlatformBranding remplace alors ces liens). L'ancien fichier portait
+         encore le logo « J@aba ». -->
+    <link rel="icon" type="image/png" href="/logo-tendo.png" />
+    <!-- Safari, WhatsApp et divers robots demandent /favicon.ico sans regarder
+         la balise ci-dessus : sans ce fichier, chaque visite génère un 404. -->
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/logo-tendo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2f80ed" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <!-- Empêche la traduction auto de Chrome : elle remplace les nœuds texte
+         du DOM et provoque des crashes React (removeChild NotFoundError). -->
+    <meta name="google" content="notranslate" />
+    <title>Tendo</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

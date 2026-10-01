@@ -1,0 +1,40 @@
+# Ignorer les dépendances node
+node_modules
+
+# Ignorer les fichiers de build
+dist
+build
+
+# Ignorer les fichiers de cache
+.cache
+.parcel-cache
+
+# Ignorer les fichiers d'environnement
+.env
+.env.local
+.env.*.local
+
+# Ignorer les fichiers de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Ignorer les fichiers de test
+coverage
+.nyc_output
+
+# Ignorer les fichiers IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Ignorer les fichiers OS
+.DS_Store
+Thumbs.db
+
+# Ignorer Git
+.git
+.gitignore
