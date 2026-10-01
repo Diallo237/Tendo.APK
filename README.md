@@ -35,3 +35,17 @@ npm run preview
 ```
 
 La PWA doit etre servie en HTTPS pour etre installable sur un telephone.
+
+## Applications Android et iOS
+
+Les projets natifs Capacitor sont dans `android/` et `ios/`.
+
+Avant une compilation release, copier `.env.production.example` vers `.env.production` et remplacer l'URL par l'URL HTTPS reelle de l'API Tendo.
+
+```powershell
+npm run cap:sync
+npm run cap:open:android
+npm run cap:open:ios
+```
+
+Android se construit avec Android Studio. iOS se construit avec Xcode sur macOS.
